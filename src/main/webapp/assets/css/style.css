@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Kaushan+Script&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #eee;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.fotoDeRecetaSM {
+    display: block;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.fotoDeRecetaMD {
+    width: 300px;
+    border-radius: 10px;
+}
+
+form > div {
+    padding: 10px;
+}
+
+form input, textarea {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+nav, footer {
+    background: #111;
+    padding: 10px;
+}
+
+footer img {
+    width: 100px;
+}
+
+.brand-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    text-decoration: none;
+}
+
+.brand-name {
+    font-family: 'Kaushan Script', cursive;
+    color: #FF6262;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .fotoDeRecetaSM {
+        width: 100%;
+    }
+
+    table, th, td {
+        padding: 3px;
+    }
+
+    table tr > td:nth-child(3) {
+        display: none;
+    }
+
+    table tr > th:nth-child(3) {
+        display: none;
+    }
+}
